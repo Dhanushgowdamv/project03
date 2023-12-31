@@ -1,0 +1,494 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+*::selection{
+    background-color: #000;
+    color: #fff;
+    font-family: 'Futura-Bold';
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color:#F7F7F7 ;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    background-color:;
+    position: fixed;
+    z-index:999 ;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 25px;
+}
+#navpart2 {
+    /* background-color: RED; */
+    height: 82px;
+    overflow: hidden;
+}
+
+#navpart2 svg {
+    display: block;
+}
+
+ 
+#nav #navpart1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#link{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#navpart1 #links{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+#navpart1 #links a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: flex-start;
+}
+#icon {
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+}
+
+#nav-part2 #icon i {
+    column-gap: 20px;
+    font-size: 25px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+#icon i{
+padding: 20px 20px;
+}
+
+
+
+.curser{
+    height: 150px;
+    width: 150px ;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+
+}
+#page1{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding-top: 25vh;
+
+}
+#page1 h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 33vh;
+    font-family: futura;
+    line-height:27vh;
+    letter-spacing: -5;
+    
+}
+#vidio-container{
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vh;
+    
+}
+#vidio-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+
+
+}
+#vidio-container #play{
+    padding: 3vw 2vw;
+    background-color: black;
+    color: #fff;
+   font-size: 2vw;
+   position: fixed;
+  text-transform: uppercase;
+  font-family: futura;
+  border-radius: 50%;
+  opacity: 0;
+  scale: 0;
+}
+
+/* page2 */
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+    
+}
+#page2 .elem {
+    height: 100%;
+    width: 31%;
+    overflow: hidden;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    
+
+
+}
+.elem img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+
+}
+#page2 .elem .dets{
+    height: 50px;
+    border-radius: 50px;
+    width: 70%;
+    position: absolute;
+    z-index: 9;
+    
+    background-color: palegoldenrod;
+}
+#page2 .elem .dets:hover{
+    animation-duration: 2s;
+    height: 200px;
+    
+
+    }
+
+    #bito{
+        height: 20vw;
+        width: 100%;
+        display: flex ;
+        justify-content: space-between;
+       
+        
+    }
+    #bito #a1{
+        width: 45%;
+        font-size: 2vw;
+        font-weight: 500;
+        padding-left: 20px;
+         text-align: left; 
+    }
+    #bito #a2{
+        width: 45%;
+        padding-left:15% ;
+        margin-right: 200px;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: capitalize;
+        
+        
+    }
+     #a2 .btn {
+        line-height: 100px;
+        padding-top: 30px;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: -1;
+        gap: 1;
+        
+        
+        text-decoration: none;
+        color: #000;
+    }
+    #a2 .btn:hover{
+        text-decoration: underline;
+
+    }
+    #intext{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* #imqg1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px; */
+      
+    
+     
+       
+        
+    #asdf{
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: transparent;
+        opacity:0 ;
+
+    }
+    #imqg1 {
+        
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        opacity:0;
+        background-color:transparent;
+      
+    }
+    #imqg2 {
+       height: 100px;
+        width: 100px;
+        object-fit: cover;
+        opacity:;
+        background-color: transparent;
+
+    }
+   
+    #imqg2 img{
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+    }
+    #asdf p{
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+   #asdf:hover{
+        opacity: 1;
+   }
+        
+    #imqg1,#imqg2:hover{
+        opacity: 1;
+        
+    }
+
+#page3{
+   
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+}
+.child img{
+   
+    height: 45vh;
+    width: 34vw;
+    object-fit: cover;
+}
+.child{
+    margin-top: 175px;
+    height: 55vh;
+    width:36vw ;
+    
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.child p{
+    margin-top: 25px;
+    line-height: 1;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+    width: 200px;
+}
+.child {
+
+    display: block;
+    align-items: center;
+
+}
+#page4{
+   
+    
+    width: 100%;
+    
+}
+#text h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+#text{
+    margin-top: 250px;
+    font-weight: 500;
+   
+    color: #000000;
+    font-size: 40px;
+    letter-spacing:  -8px;
+    initial-letter: 1px;
+    line-height: 59px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#text button{
+    font-family: monospace;
+    font-size: 25px;
+    margin-left: 40%;
+    padding: 40px 60px;
+    border-radius: 100px;
+    background-color: #000;
+    color: #dadada;
+    height: 70px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 101;
+    white-space: pre-wrap;
+   
+    transition: color 0.2s ease-out;
+}
+
+#divide{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#divide #part{
+    height: 800px; 
+    width: 30%;
+    /* background-color: #000; */
+}
+#part h2{
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+#part p{
+    margin-top: 40px;
+    font-size: 1.3vw;
+    font-family: monospace;
+    line-height: 19px;
+
+
+}
+
+
+#text h1:nth-child(1){
+    margin-left: 6.4%;
+}
+#text h1:nth-child(2){
+    margin-left: 11%;
+
+}
+#part img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+#part {
+    height: 600px;
+    width: 30%;
+    object-fit: cover;
+
+}
+ #p5 input {
+    height: 50px;
+    font-size: 50px;
+    font-weight: 500;
+    width: 100%;
+    color: #000;
+    text-transform: uppercase;
+   
+        font-size: 40px;
+        font-family: "Futura Now Headline";
+        font-weight: 500;
+        border-radius: 0px;
+        border: none;
+        width: 100%;
+        height: 46px;
+        color: var(--foreground);
+        text-transform: uppercase;
+        background: transparent;
+        overflow: hidden;
+        resize: none;
+        outline: none;
+    
+} 
+#p5 h1{
+    width: 100%;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 39px;
+    font-weight: 500;
+    font-family: cursive;
+    padding-bottom: 200px;
+
+}
+
+    
+  
+
+@media (max-width:600px) {
+    
+     
+    #page1{
+      
+        
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 10px;
+
+    }
+    #page1 h1{
+      
+        font-size: 10vw;
+        line-height: 10vw;
+      letter-spacing: -3px;
+    }
+    #vidio-container{
+        height: 100vh;
+        width: 100%;
+        margin-top: 3vh;
+        
+    }
+    #vidio-container video{
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+    #vidio-container #play{
+        padding: 3vw 2vw;
+        background-color: black;
+        color: #fff;
+       font-size: 2vw;
+       position: fixed;
+      text-transform: uppercase;
+      font-family: futura;
+      border-radius: 50%;
+      opacity: 1;
+      scale: 0;
+    }
+}
+
+
